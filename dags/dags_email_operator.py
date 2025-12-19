@@ -13,7 +13,7 @@ with DAG(
     send_email_task = EmailOperator(
         task_id="send_email_task",
         to="galaxy1022@naver.com",
-        cc="venusgalaxy1022@gmail.com"
+        cc="venusgalaxy1022@gmail.com",
         subject="Airflow Email Test",
         html_content="<h1> Airflow 작업이 완료되었습니다 </h1>"
     )
