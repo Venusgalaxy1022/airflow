@@ -2,7 +2,7 @@ from airflow import DAG
 import pendulum 
 import datetime 
 from airflow.operator.python import PythonOperator 
-from common.common_func import regist  
+from plugins.common.common_func import regist  
 
 with DAG(
     dag_id = "dags_pyton_with_op_args",
